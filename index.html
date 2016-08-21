@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		
+		<!-- Website Title & Description for Search Engine purposes -->
+		<title>Starbucks</title>
+		<meta name="description" content="">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		
+		<!-- Custom CSS -->
+		<link href="includes/css/styles.css" rel="stylesheet">
+
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+		<!--用 google font-->
+  		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Pacifico">
+	</head>
+
+	<body>
+	<!--start-->
+	<div class="container" id="main">
+		<!--最头上的navbar-->
+		<div class="navbar navbar-fixed-top" style="background-color:#ECF8E0;">
+		<!--把navbar里面的内容显示在中间，不显示在整个界面，所以我们把内容放在container里面-->
+			<div class="container">
+				<div class="navbar-header">
+
+				<!--当屏幕缩小的时候，只保留一个logo 还有一个 button（这个button可以显示其他所有的list）-->
+				<button type="button" class="navbar-toggle collapsed btn btn-warning btn-xs" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">Collapse
+					<!--这个没法显示-->
+					<span class="sr-only"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<a class="navbar-brand" href="http://www.starbucks.com"><img src="images/logo.png" alt="your logo" width="30px" height="30px"></a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Coffee</a></li>
+							<li><a href="#">Cookies</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Secret menu</a></li>
+							<li class="disabled"><a href="#">Contact</a></li>
+						</ul>
+					</li>
+				</ul>
+
+				<form class="navbar-form pull-left">  <!--加上这个pull-left，后面的myaccount就可以在同一行了-->
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Search..">
+					</div>
+					<button type="button" class="btn btn-success"><span class="glyphicon glyphicon-search"></span> Search</button>
+				</form>
+
+				<!--右边的my account-->
+				<ul class="nav navbar-nav pull-right">
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span> My Account<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="#"><span class="glyphicon glyphicon-wrench"></span> Settings</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-refresh"></span> Update Profile</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-usd"></span> Balance</a></li>
+							<li class="divider"></li>
+							<li><a href="#"><span class="glyphicon glyphicon-remove-circle"></span> Sign out</a></li>
+						</ul>
+					</li>  <!--li要在这里close掉-->
+				</ul><!--navbar-nav pull-right-->
+
+				</div><!--end collapse navbar-collapse-->
+			</div><!--end container-->
+		
+		</div><!--end navbar-->
+
+		<!--carousel slide part-->
+		<div class="carousel slide row" id="myCarousel">
+			<!--indicators put three slides-->
+			<ol class="carousel-indicators">
+				<li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+
+			<!--put the content in each slide-->
+			<div class="carousel-inner">
+				<div class="item active" id="slide1"> <!--第一个激活-->
+					<div class="carousel-caption">
+						<h4>Coffee1</h4>
+						<p>Enjoy it</p>
+          				<p><a href="#" class="btn btn-success btn-sm">Order it now</a></p>
+					</div><!--end carousel-caption-->	
+				</div><!--end item-->
+
+				<div class="item" id="slide2"> <!--第一个激活-->
+					<div class="carousel-caption">
+						<h4>Coffee2</h4>
+						<p>Enjoy it</p>
+          				<p><a href="#" class="btn btn-success btn-sm">Order it now</a></p>
+					</div><!--end carousel-caption-->	
+				</div><!--end item-->
+
+				<div class="item" id="slide3"> <!--第一个激活-->
+					<div class="carousel-caption">
+						<h4>Coffee3</h4>
+						<p>Enjoy it</p>
+          				<p><a href="#" class="btn btn-success btn-sm">Order it now</a></p>
+					</div><!--end carousel-caption-->	
+				</div><!--end item-->
+			</div><!--end carousel inner-->
+
+			<!--Controls,向左和向右-->
+			<div class="left carousel-control" data-slide="prev" href="#myCarousel">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</div>
+
+			<div class="right carousel-control" data-slide="next" href="#myCarousel">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</div>
+		</div><!--end carousel-->
+
+		<div class="row" id="bigCallout">
+			<div class="col-12">
+				<!--当点击 more info的button时候，你要有一个success的alert box出现在上方，显示整个alert-block-->
+				<div class="alert alert-success alert-block fade in" id="successAlert">
+					<button type="button" class="close" data-dismiss="alert">&times;</button>
+					<p>Congratulations! You will get more information here</p>
+				</div>
+
+				<!--当屏幕变小的时候,有一个button出现,使用visible-xs-->
+				<!--visible only on small devices-->
+				<div class="well well-small visible-xs">
+					<a class="btn btn-warning btn-lg btn-block"><span class="glyphicon glyphicon-cutlery"></span> Order it
+					</a>
+				</div>
+
+				<!--正常显示的时候样子-->
+				<div class="well"> <!--well，是指加一个圆边的border-->
+					
+					<div class="page-header">
+						<h1>Starbucks History <small>The information coming from wikipedia</small></h1>
+					</div><!--end page-header-->
+
+					<p class="lead">
+						In 1984, the original owners of Starbucks, led by Jerry Baldwin, purchased Peet's. During the 1980s, total sales of coffee in the US were falling, but sales of specialty coffee increased, forming 10% of the market in 1989, compared with 3% in 1983. By 1986 the company operated six stores in Seattle and had only just begun to sell espresso coffee.
+					</p>
+
+					<button class="btn btn-primary btn-lg" id="alertMe">More Info</button>
+					<a href="#" class="btn btn-link btn-lg">More Info links</a>				
+				</div><!--end well-->
+
+			</div><!--end col-12-->
+		</div><!--end bigCallout-->
+
+		<!--features part-->
+		<div class="row" id="featuresHeading">
+			<div class="col-12">
+				<h1>Delicious coffee</h1>
+				<p class="lead">Vanilla Bean Creme. Frappuccino Blended Creme. White Chocolate Mocha Frappuccino Blended Coffee. Menu Drinks. Frappuccino Blended Beverages.</p>
+			</div><!--end col-12-->
+		</div><!--end featuresHeading-->
+		
+		<!--3列有图片和文字，panel 以及thumbnail-->
+		<div class="row" id="features">
+			<div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">  <!--之所以是4，是因为有3列，12/3=4-->
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						<h3 class="panel-title">Vanilla Bean Creme.</h3>
+					</div><!--panel-heading-->
+					<div class="panel-body">
+						<img src="images/coffee1.jpg" width="150px" height="150px" class="img-circle">
+						<p>Vanilla Bean Creme.Here is the information about the menu.</p>
+						<a href="#" class="btn btn-warning btn-block">Details</a>
+					</div><!--end panel-body-->
+				</div><!--end panel-->
+			</div><!--end of col-sm-4-->
+
+			<div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">  <!--之所以是4，是因为有3列，12/3=4-->
+				<div class="panel panel-danger">
+					<div class="panel-heading">
+						<h3 class="panel-title">Frappuccino Blended</h3>
+					</div><!--panel-heading-->
+					<div class="panel-body">
+						<img src="images/coffee2.jpg" width="150px" height="150px" class="img-circle">
+						<p>Frappuccino Blended.Here is the information about the menu.</p>
+						<a href="#" class="btn btn-info btn-block">Details</a>
+					</div><!--end panel-body-->
+				</div><!--end panel-->
+			</div><!--end of col-sm-4-->
+
+			<div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">  <!--之所以是4，是因为有3列，12/3=4-->
+				<div class="panel panel-warning">
+					<div class="panel-heading">
+						<h3 class="panel-title">Coffee beans</h3>
+					</div><!--panel-heading-->
+					<div class="panel-body">
+						<img src="images/coffee3.jpg" width="150px" height="150px" class="img-circle">
+						<p>Coffee beans creme.Here is the information about the menu.</p>
+						<a href="#" class="btn btn-success btn-block">Details</a>
+					</div><!--end panel-body-->
+				</div><!--end panel-->
+			</div><!--end of col-sm-4-->
+
+		</div><!--end features-->
+
+		<div class="row" id="moreInfo">
+			<!--左边的可以切换的tab-->
+			<div class="col-sm-6 col-md-6 col-lg-6 col-xs-12">
+				<h3>Where could you find me!</h3>
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#s1" data-toggle="tab">Section1</a></li>
+					<li><a href="#s2" data-toggle="tab">Section2</a></li>
+				</ul>
+
+				<!--each tab content-->
+				<div class="tab-content">
+					<div id="s1" class="tab-pane fade in active">
+						<h4><span class="glyphicon glyphicon-map-marker"></span> Our location<small> Popular spot</small></h4>
+
+						<!--add google map-->
+						<iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d105844.7102461807!2d-81.14226996259573!3d34.00159474327292!3m2!1i1024!2i768!4f13.1!2m1!1sstarbucks!5e0!3m2!1sen!2sus!4v1460053553686" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+						<p>
+							Starbucks is a chain of stores that sell coffee. A chain is many stores owned by the same company. Many of the stores look the same, and all stores sell the same items, often at the same prices. As well as coffee, Starbucks sells beverages and baked goods.
+						</p>
+					</div><!--end of s1-->
+
+					<div id="s2" class="tab-pane fade">
+						<h4>A left floated picture <small>Using placehold it</small></h4>
+
+						<!--using the plachold it-->
+						<img src="http://placehold.it/150x150" class="thumbnail pull-left">
+						<p>
+							Starbucks is a chain of stores that sell coffee. A chain is many stores owned by the same company. Many of the stores look the same, and all stores sell the same items, often at the same prices. As well as coffee, Starbucks sells beverages and baked goods.
+							Starbucks is a chain of stores that sell coffee. A chain is many stores owned by the same company. Many of the stores look the same, and all stores sell the same items, often at the same prices. As well as coffee, Starbucks sells beverages and baked goods.
+						</p>
+						<hr>
+						<a href="#myModal" role="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-hand-up"></span> Click for a Modal Window!</a>
+
+						<!--modal part-->
+						<div class="modal fade" id="myModal" role="dialog">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<!--modal header-->
+									<div class="modal-header">
+										<button class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">Modal Window</h4>
+									</div><!--end of modal-header-->
+
+									<!--modal body-->
+									<div class="modal-body">
+										<h4>Text in a modal</h4>
+										<p>Starbucks is a chain of stores that sell coffee. A chain is many stores owned by the same company. Many of the stores look the same, and all stores sell the same items, often at the same prices.</p>
+
+										<h4>Popovers in a modal</h4>
+										<!--当点击button的时候，会有popover出现，使用data-toggle="popover"-->
+										<a href="#" class="btn btn-danger pop" data-toggle="popover" title="You clicked it!" data-content="I got it!">Don't click this button</a>
+
+										<h4>Tooltips in a modal</h4>
+										<!--当mouseover至link上的时候，会有提示-->
+										<p><a href="#" data-toggle="tooltip" title="wow!">link</a>  Starbucks is a chain of stores that sell coffee.<a href="#" data-toggle="tooltip" title="good job!"> Info</a></p>
+										<hr>
+
+										<p><small>PS. This form doesn't do anything. Just a heads up.</small></p>
+
+										<form class="form-horizontal">
+											<div class="form-group">
+    											<label class="control-label col-sm-2" for="name">Name:</label>
+											    <div class="col-sm-10">
+											    	<input type="text" class="form-control" id="name" placeholder="Name">
+											    </div>
+  											</div>
+
+  											<div class="form-group">
+    											<label class="control-label col-sm-2" for="email">Email:</label>
+											    <div class="col-sm-10">
+											     	<input type="text" class="form-control" id="email" placeholder="Email">
+											    </div>
+  											</div>
+
+  											<div class="form-group">
+    											<label class="control-label col-sm-2" for="message">Message:</label>
+											    <div class="col-sm-10">
+											     	<textarea class="form-control" id="message" placeholder="Message" row="3"></textarea>
+											    </div>
+  											</div>
+
+  											<div class="form-group">
+  												<div class="col-sm-12">
+  													<a href="#" type="button" style="margin-bottom:10px;" class="btn btn-primary btn-sm pull-right"><span class="glyphicon glyphicon-envelope"></span> Send</a>
+  												</div>
+  											</div>
+										</form>
+
+									</div><!--end of modal-body-->
+
+									<!--modal footer-->
+									<div class="modal-footer">
+										<button class="btn btn-warning btn-md" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Close</button>
+										<button class="btn btn-success btn-md" data-dismiss="modal"><span class="glyphicon glyphicon-ok"></span> Submit</button>
+									</div><!--end of modal-footer-->
+								</div><!--end of modal-content-->
+								
+							</div><!--end of modal-dialog-->
+						</div><!--end of modal-->
+					</div><!--end of s2-->
+				</div><!--tab-content-->
+			</div><!--end of col-6-->
+
+			<!--右边写内容的-->
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+				<h4>More Info about Starbucks</h4>
+				<p>Starbucks is a chain of stores that sell coffee. A chain is many stores owned by the same company. Many of the stores look the same, and all stores sell the same items, often at the same prices.</p>
+
+				<h4>A list Group</h4>
+				<div class="list-group">
+						<a href="#" class="list-group-item list-group-item-success">
+						<h4 class="list-group-item-heading">Vanilla Bean Creme.</h4>
+						<p class="list-group-item-text">Vanilla Bean Creme.Here is the information about the menu.</p>
+						</a>
+
+						<a href="#" class="list-group-item list-group-item-info">
+						<h4 class="list-group-item-heading">Vanilla Bean Creme.</h4>
+						<p class="list-group-item-text">Vanilla Bean Creme.Here is the information about the menu.</p>
+						</a>
+
+						<a href="#" class="list-group-item list-group-item-warning">
+						<h4 class="list-group-item-heading">Vanilla Bean Creme.</h4>
+						<p class="list-group-item-text">Vanilla Bean Creme.Here is the information about the menu.</p>
+						</a>
+				</div><!--end of list-group-->
+
+				<h5>A small heading</h5>
+				<p>Starbucks is a chain of stores that sell coffee. A chain is many stores owned by the same company. Many of the stores look the same, and all stores sell the same items, often at the same prices.</p>
+
+
+			</div><!--col-lg-6 col-md-6 col-sm-6 col-xs-12-->
+		</div><!--end moreInfo-->
+		<hr>
+
+		<div class="row"  id="moreCourses">
+			<h4>Cups of the starbucks</h4>
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+				<div class="row thumbnail" id="t1">
+					<img src="images/coffee5.jpg" width="100%" height="100%" >
+					<!--加上价格的标签-->
+					<div class="label label-success price"><span class="glyphicon glyphicon-heart"></span><sup>  $</sup>  20</div>
+					<div class="caption">
+						<h3>Cup one</h3>
+						<p>Starbucks is a chain of stores that sell coffee. A chain is many stores owned by the same company. Many of the stores look the same, and all stores sell the same items, often at the same prices.</p>
+						<p><a href="#" class="btn btn-primary btn-sm">Cup one</a><a href="#"> Link</a></p>
+					</div><!--end of caption-->
+				</div><!--end of thumbnail-->	
+			</div><!--end of col-lg-6 col-md-6 col-sm-6 col-xs-6-->
+
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+				<div class="thumbnail">
+					<img src="images/coffee6.jpg" width="100%" height="100%" >
+					<!--加上价格的标签-->
+					<div class="label label-success price"><span class="glyphicon glyphicon-heart"></span> Free</div>
+
+					<div class="caption">
+						<h3>Cup two</h3>
+						<p>Starbucks is a chain of stores that sell coffee. A chain is many stores owned by the same company. Many of the stores look the same, and all stores sell the same items, often at the same prices.</p>
+						<p><a href="#" class="btn btn-primary btn-sm" >Cup two</a><a href="#"> Link</a></p>
+					</div><!--end of caption-->
+				</div><!--end of thumbnail-->	
+			</div><!--end of col-lg-6 col-md-6 col-sm-6 col-xs-6-->
+		</div><!--end moreCourses-->
+	</div><!--end of container-->
+	
+	<!--footer,把footer放在container外面-->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-2">
+					<h6>Copyright Yue He</h6>
+				</div>
+
+				<div class="col-sm-4">
+					<h6>About us</h6>
+					<p>Starbucks is a chain of stores that sell coffee. A chain is many stores owned by the same company. Many of the stores look the same, and all stores sell the same items, often at the same prices.</p>
+				</div>
+
+				<div class="col-sm-2">
+					<h6>Navigation</h6>
+					<ul class="unstyled">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Service</a></li>
+						<li><a href="#">Links</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+
+				<div class="col-sm-2">
+					<h6>Follow us</h6>
+					<ul class="unstyled">
+						<li><a href="#">Twitter</a></li>
+						<li><a href="#">Facebook</a></li>
+						<li><a href="#">Google</a></li>
+					</ul>
+				</div>
+
+				<div class="col-sm-2">
+
+				<h6><span class="glyphicon glyphicon-heart"> Love it</h6>
+				</div>
+			</div><!--end of row-->
+
+		</div><!--end of container-->
+	</footer>
+
+
+	<!-- All Javascript at the bottom of the page for faster page loading -->
+		
+	<!-- First try for the online version of jQuery-->
+	<!--<script src="http://code.jquery.com/jquery.js"></script>-->
+	
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<!--<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>-->
+	
+	<!-- Bootstrap JS -->
+	<!--<script src="bootstrap/js/bootstrap.min.js"></script>-->
+	
+	<!-- Custom JS -->
+	<script src="includes/js/script.js"></script>
+	
+	</body>
+</html>
+
